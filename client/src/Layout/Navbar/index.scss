@@ -1,0 +1,71 @@
+.nav{
+  background-color: white;
+//  position: fixed;
+ width: 100%;
+ #navbar{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
+    
+    .navigations{
+        ul{
+            display: flex;
+            gap: 30px;
+            li{
+                a{
+                    font-size: 15px;
+                    transition: .2s;
+                    &:hover{
+                    transition: .2s;
+                    color: var(--main--color);
+                    }
+                }
+            }
+        }
+    }
+    .icons{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .icon{
+            display: flex;
+            gap: 10px;
+span{
+    font-size: 20px;
+    cursor: pointer;
+}
+        }
+        .btn-nav{
+            border-radius: 30px;
+            border: 1px solid #EEEEEE;
+               transition: .2s; 
+               padding: 10px 40px ;
+            &:hover{
+            border: 1px solid var(--main--color);
+               transition: .3s; 
+            }
+        }
+    }
+    .respons-icon{
+        display: none;
+    }
+}   
+}
+@media screen and (max-width:992px){
+    .nav{
+       #navbar{
+          .navigations{
+             display: none;
+          }
+          .icons{
+             display: none;
+          }
+          .respons-icon{
+            display: block;
+            font-size: 20px;
+        }
+      }   
+      }   
+}

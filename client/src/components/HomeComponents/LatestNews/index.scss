@@ -1,0 +1,16 @@
+#news{
+    margin: 120px 0 70px 0;
+    .intro{
+        margin-bottom: 60px;
+        p{
+    color: var(--secondary--color);
+        }
+        h2{
+            font-family: 'Oswald', sans-serif;
+            font-size: 36px;
+            span{
+    border-bottom:2px solid var(--main--color) ;
+            }
+        }
+     } 
+}
